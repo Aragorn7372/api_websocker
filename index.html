@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dawazon: Dawazon</title>
+<title>Dawazon: Funko API</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,17 +70,12 @@ $(function() {
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Dawazon </div></div>
+  <div class="headertitle"><div class="title">Funko API </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__2home_2runner_2work_2api__websocker_2api__websocker_2README"></a> &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD </p>
-<h1><a class="anchor" id="autotoc_md0"></a>
-# api_websocker</h1>
+<div class="textblock"><p><a class="anchor" id="md__2home_2runner_2work_2api__websocker_2api__websocker_2README"></a> REST API developed with Spring Boot for managing Funko Pop figures and Categories.</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
-Funko API</h1>
-<p>REST API developed with Spring Boot for managing Funko Pop figures and Categories.</p>
-<h2><a class="anchor" id="autotoc_md2"></a>
-🚀 Technologies</h2>
+🚀 Technologies</h1>
 <ul>
 <li><b>Java 25</b></li>
 <li><b>Spring Boot 3.5.6</b></li>
@@ -90,28 +85,28 @@ Funko API</h1>
 <li><b>WebSocket</b> - Real-time support</li>
 <li><b>Lombok</b> - Boilerplate code reduction</li>
 </ul>
+<h1><a class="anchor" id="autotoc_md2"></a>
+🛠️ Setup &amp; Run</h1>
 <h2><a class="anchor" id="autotoc_md3"></a>
-🛠️ Setup &amp; Run</h2>
-<h3><a class="anchor" id="autotoc_md4"></a>
-Prerequisites</h3>
+Prerequisites</h2>
 <ul>
 <li>Java 25</li>
 <li>Docker (optional)</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md5"></a>
-Local Run</h3>
+<h2><a class="anchor" id="autotoc_md4"></a>
+Local Run</h2>
 <p>To run the application locally using Gradle:</p>
 <div class="fragment"><div class="line">./gradlew bootRun</div>
 </div><!-- fragment --><p>The API will be available at <code><a href="http://localhost:3000">http://localhost:3000</a></code> (based on <code>docker-compose</code> ports, defaulting to 8080 usually but mapped to 3000 in docker-compose. Please check <code>application.properties</code> for local port if not 8080).</p>
-<h3><a class="anchor" id="autotoc_md6"></a>
-Docker</h3>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Docker</h2>
 <p>To run the application using Docker Compose:</p>
 <div class="fragment"><div class="line">docker-compose up -d --build</div>
 </div><!-- fragment --><p>The API will be accessible at <code><a href="http://localhost:3000">http://localhost:3000</a></code>.</p>
+<h1><a class="anchor" id="autotoc_md6"></a>
+📚 API Endpoints</h1>
 <h2><a class="anchor" id="autotoc_md7"></a>
-📚 API Endpoints</h2>
-<h3><a class="anchor" id="autotoc_md8"></a>
-Funkos (&lt;tt&gt;/funkos&lt;/tt&gt;)</h3>
+Funkos (&lt;tt&gt;/funkos&lt;/tt&gt;)</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadLeft">Method   </th><th class="markdownTableHeadLeft">Endpoint   </th><th class="markdownTableHeadLeft">Description    </th></tr>
@@ -136,8 +131,8 @@ Funkos (&lt;tt&gt;/funkos&lt;/tt&gt;)</h3>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyLeft"><code>DELETE</code>   </td><td class="markdownTableBodyLeft"><code>/funkos/{id}</code>   </td><td class="markdownTableBodyLeft">Delete a funko   </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md9"></a>
-Categories (&lt;tt&gt;/categorias&lt;/tt&gt;)</h3>
+<h2><a class="anchor" id="autotoc_md8"></a>
+Categories (&lt;tt&gt;/categorias&lt;/tt&gt;)</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadLeft">Method   </th><th class="markdownTableHeadLeft">Endpoint   </th><th class="markdownTableHeadLeft">Description    </th></tr>
@@ -152,23 +147,23 @@ Categories (&lt;tt&gt;/categorias&lt;/tt&gt;)</h3>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyLeft"><code>DELETE</code>   </td><td class="markdownTableBodyLeft"><code>/categorias/{id}</code>   </td><td class="markdownTableBodyLeft">Delete a category   </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md10"></a>
-Storage (&lt;tt&gt;/storage&lt;/tt&gt;)</h3>
+<h2><a class="anchor" id="autotoc_md9"></a>
+Storage (&lt;tt&gt;/storage&lt;/tt&gt;)</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadLeft">Method   </th><th class="markdownTableHeadLeft">Endpoint   </th><th class="markdownTableHeadLeft">Description    </th></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyLeft"><code>GET</code>   </td><td class="markdownTableBodyLeft"><code>/storage/{filename}</code>   </td><td class="markdownTableBodyLeft">Retrieve a stored file/image   </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md11"></a>
-🧪 Testing</h2>
+<h1><a class="anchor" id="autotoc_md10"></a>
+🧪 Testing</h1>
 <p>To run the tests and generate the Jacoco report:</p>
 <div class="fragment"><div class="line">./gradlew test jacocoTestReport</div>
 </div><!-- fragment --><p>Reports will be available in <code>build/reports/jacoco/test/html/index.html</code>.</p>
+<h1><a class="anchor" id="autotoc_md11"></a>
+📦 Examples</h1>
 <h2><a class="anchor" id="autotoc_md12"></a>
-📦 Examples</h2>
-<h3><a class="anchor" id="autotoc_md13"></a>
-Create Funko (POST /funkos)</h3>
+Create Funko (POST /funkos)</h2>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;name&quot;: &quot;Goku Super Saiyan&quot;,</div>
 <div class="line">  &quot;price&quot;: 29.99,</div>
@@ -176,8 +171,8 @@ Create Funko (POST /funkos)</h3>
 <div class="line">  &quot;imagen&quot;: &quot;https://example.com/images/goku-funko.jpg&quot;,</div>
 <div class="line">  &quot;categoria&quot;: &quot;ANIME&quot;</div>
 <div class="line">}</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md14"></a>
-Update Funko (PUT /funkos/{id})</h3>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md13"></a>
+Update Funko (PUT /funkos/{id})</h2>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;name&quot;: &quot;Batman Classic&quot;,</div>
 <div class="line">  &quot;price&quot;: 25.5,</div>
@@ -185,8 +180,8 @@ Update Funko (PUT /funkos/{id})</h3>
 <div class="line">  &quot;imagen&quot;: &quot;https://example.com/images/batman-funko.jpg&quot;,</div>
 <div class="line">  &quot;categoria&quot;: &quot;COMICS&quot;</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md15"></a>
-📂 Project Structure</h2>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md14"></a>
+📂 Project Structure</h1>
 <div class="fragment"><div class="line">📦 Funko API</div>
 <div class="line"> ┣ 📂 .git</div>
 <div class="line"> ┣ 📂 gradle</div>
@@ -218,25 +213,10 @@ Update Funko (PUT /funkos/{id})</h3>
 <div class="line"> ┣ 🐘 gradlew</div>
 <div class="line"> ┣ 📜 gradlew.bat</div>
 <div class="line"> ┗ 🐘 settings.gradle.kts</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md16"></a>
-✒️ Author</h2>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md15"></a>
+✒️ Author</h1>
 <div align="center"> <a href="https://github.com/Aragorn7372" target="_blank"><img src="https://github.com/Aragorn7372.png" alt="Aragorn7372" width="150px" style="border-radius: 50%;" class="inline"/> </a> <h3>Aragorn7372</h3>
-</div><div align="center"> <a href="https://github.com/Aragorn7372" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub Profile" class="inline"/> </a> </div><blockquote class="doxtable">
-<blockquote class="doxtable">
-<blockquote class="doxtable">
-<blockquote class="doxtable">
-<blockquote class="doxtable">
-<blockquote class="doxtable">
-<blockquote class="doxtable">
-<p>&zwj;dev </p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</div></div><!-- PageDoc -->
+</div><div align="center"> <a href="https://github.com/Aragorn7372" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub Profile" class="inline"/> </a> </div> </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

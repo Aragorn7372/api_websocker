@@ -9,9 +9,9 @@ var searchData=
   ['service_2ejava_6',['Service.java',['../Service_8java.html',1,'']]],
   ['service_3c_20categoriaresponsedto_2c_20uuid_2c_20categoriarequestdto_20_3e_7',['Service&lt; CategoriaResponseDto, UUID, CategoriaRequestDto &gt;',['../interfaceorg_1_1example_1_1funko2_1_1service_1_1Service.html',1,'org::example::funko2::service']]],
   ['service_3c_20funkoresponsedto_2c_20long_2c_20funkorequestdto_20_3e_8',['Service&lt; FunkoResponseDto, Long, FunkoRequestDto &gt;',['../interfaceorg_1_1example_1_1funko2_1_1service_1_1Service.html',1,'org::example::funko2::service']]],
-  ['setup_20run_9',['🛠️ Setup &amp; Run',['../index.html#autotoc_md3',1,'']]],
-  ['storage_20tt_10',['Storage (&lt;tt&gt;/storage&lt;/tt&gt;)',['../index.html#autotoc_md10',1,'']]],
-  ['storage_20tt_20storage_20tt_11',['Storage (&lt;tt&gt;/storage&lt;/tt&gt;)',['../index.html#autotoc_md10',1,'']]],
+  ['setup_20run_9',['🛠️ Setup &amp; Run',['../index.html#autotoc_md2',1,'']]],
+  ['storage_20tt_10',['Storage (&lt;tt&gt;/storage&lt;/tt&gt;)',['../index.html#autotoc_md9',1,'']]],
+  ['storage_20tt_20storage_20tt_11',['Storage (&lt;tt&gt;/storage&lt;/tt&gt;)',['../index.html#autotoc_md9',1,'']]],
   ['storagebadrequest_12',['storagebadrequest',['../classorg_1_1example_1_1funko2_1_1exceptions_1_1storage_1_1StorageBadRequest.html#a385b53722ce3d7bc5da79841af5a9c1e',1,'org.example.funko2.exceptions.storage.StorageBadRequest.StorageBadRequest()'],['../classorg_1_1example_1_1funko2_1_1exceptions_1_1storage_1_1StorageBadRequest.html',1,'org.example.funko2.exceptions.storage.StorageBadRequest']]],
   ['storagebadrequest_2ejava_13',['StorageBadRequest.java',['../StorageBadRequest_8java.html',1,'']]],
   ['storageconfig_14',['StorageConfig',['../classorg_1_1example_1_1funko2_1_1config_1_1storage_1_1StorageConfig.html',1,'org::example::funko2::config::storage']]],
@@ -27,5 +27,5 @@ var searchData=
   ['storageservice_24',['StorageService',['../interfaceorg_1_1example_1_1funko2_1_1storage_1_1StorageService.html',1,'org::example::funko2::storage']]],
   ['storageservice_2ejava_25',['StorageService.java',['../StorageService_8java.html',1,'']]],
   ['store_26',['store',['../classorg_1_1example_1_1funko2_1_1storage_1_1FileSystemStorageService.html#a199f551474dbf003ba3cdcac6a42840c',1,'org.example.funko2.storage.FileSystemStorageService.store()'],['../interfaceorg_1_1example_1_1funko2_1_1storage_1_1StorageService.html#a029c4490f7e486768f92143a4810ae22',1,'org.example.funko2.storage.StorageService.store()']]],
-  ['structure_27',['📂 Project Structure',['../index.html#autotoc_md15',1,'']]]
+  ['structure_27',['📂 Project Structure',['../index.html#autotoc_md14',1,'']]]
 ];

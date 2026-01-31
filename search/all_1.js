@@ -21,14 +21,14 @@ var searchData=
   ['categoriarestcontroller_18',['CategoriaRestController',['../classorg_1_1example_1_1funko2_1_1controller_1_1CategoriaRestController.html',1,'org::example::funko2::controller']]],
   ['categoriarestcontroller_2ejava_19',['CategoriaRestController.java',['../CategoriaRestController_8java.html',1,'']]],
   ['categoriarestcontrollertest_2ejava_20',['CategoriaRestControllerTest.java',['../CategoriaRestControllerTest_8java.html',1,'']]],
-  ['categorias_20tt_21',['Categories (&lt;tt&gt;/categorias&lt;/tt&gt;)',['../index.html#autotoc_md9',1,'']]],
+  ['categorias_20tt_21',['Categories (&lt;tt&gt;/categorias&lt;/tt&gt;)',['../index.html#autotoc_md8',1,'']]],
   ['categoriaservice_22',['CategoriaService',['../interfaceorg_1_1example_1_1funko2_1_1service_1_1categoria_1_1CategoriaService.html',1,'org::example::funko2::service::categoria']]],
   ['categoriaservice_2ejava_23',['CategoriaService.java',['../CategoriaService_8java.html',1,'']]],
   ['categoriaserviceimpl_24',['categoriaserviceimpl',['../classorg_1_1example_1_1funko2_1_1service_1_1categoria_1_1CategoriaServiceImpl.html',1,'org.example.funko2.service.categoria.CategoriaServiceImpl'],['../classorg_1_1example_1_1funko2_1_1service_1_1categoria_1_1CategoriaServiceImpl.html#a563e745632e1e0780a97bde262d0b430',1,'org.example.funko2.service.categoria.CategoriaServiceImpl.CategoriaServiceImpl()']]],
   ['categoriaserviceimpl_2ejava_25',['CategoriaServiceImpl.java',['../CategoriaServiceImpl_8java.html',1,'']]],
   ['categoriaserviceimpltest_2ejava_26',['CategoriaServiceImplTest.java',['../CategoriaServiceImplTest_8java.html',1,'']]],
   ['categoriatoresponsedto_27',['categoriaToResponseDto',['../classorg_1_1example_1_1funko2_1_1mapper_1_1CategoriaMapper.html#a6321023d607dbbf83938b4e97621c763',1,'org::example::funko2::mapper::CategoriaMapper']]],
-  ['categories_20tt_20categorias_20tt_28',['Categories (&lt;tt&gt;/categorias&lt;/tt&gt;)',['../index.html#autotoc_md9',1,'']]],
-  ['create_20funko_20post_20funkos_29',['Create Funko (POST /funkos)',['../index.html#autotoc_md13',1,'']]],
+  ['categories_20tt_20categorias_20tt_28',['Categories (&lt;tt&gt;/categorias&lt;/tt&gt;)',['../index.html#autotoc_md8',1,'']]],
+  ['create_20funko_20post_20funkos_29',['Create Funko (POST /funkos)',['../index.html#autotoc_md12',1,'']]],
   ['createfunko_30',['createFunko',['../classorg_1_1example_1_1funko2_1_1controller_1_1FunkoRestController.html#a41a54c586e576e29101d70a225c0e88a',1,'org::example::funko2::controller::FunkoRestController']]]
 ];
