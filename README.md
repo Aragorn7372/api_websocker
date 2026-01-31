@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# api_websocker
-=======
 # Funko API
 
 REST API developed with Spring Boot for managing Funko Pop figures and Categories.
@@ -159,4 +156,3 @@ Reports will be available in `build/reports/jacoco/test/html/index.html`.
     </a>
 </div>
 
->>>>>>> dev
