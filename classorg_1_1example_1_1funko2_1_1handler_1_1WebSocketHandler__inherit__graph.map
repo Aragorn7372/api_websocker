@@ -1,0 +1,9 @@
+<map id="org.example.funko2.handler.WebSocketHandler" name="org.example.funko2.handler.WebSocketHandler">
+<area shape="rect" id="Node000001" title=" " alt="" coords="172,93,380,133"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,13,176,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,41,236,91,234,96,127,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="200,13,352,38"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="279,52,279,93,273,93,273,52"/>
+<area shape="rect" id="Node000004" href="$interfaceorg_1_1example_1_1funko2_1_1handler_1_1WebSocketSender.html" title=" " alt="" coords="376,5,584,45"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="424,53,322,96,320,91,422,48"/>
+</map>

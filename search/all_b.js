@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['org_3a_3aexample_3a_3afunko2_0',['funko2',['../namespaceorg_1_1example_1_1funko2.html',1,'org::example']]],
+  ['org_3a_3aexample_3a_3afunko2_3a_3aconfig_3a_3astorage_1',['storage',['../namespaceorg_1_1example_1_1funko2_1_1config_1_1storage.html',1,'org::example::funko2::config']]],
+  ['org_3a_3aexample_3a_3afunko2_3a_3aconfig_3a_3awebsocket_2',['webSocket',['../namespaceorg_1_1example_1_1funko2_1_1config_1_1webSocket.html',1,'org::example::funko2::config']]],
+  ['org_3a_3aexample_3a_3afunko2_3a_3acontroller_3',['controller',['../namespaceorg_1_1example_1_1funko2_1_1controller.html',1,'org::example::funko2']]],
+  ['org_3a_3aexample_3a_3afunko2_3a_3adto_3a_3acategoria_4',['categoria',['../namespaceorg_1_1example_1_1funko2_1_1dto_1_1categoria.html',1,'org::example::funko2::dto']]],
+  ['org_3a_3aexample_3a_3afunko2_3a_3adto_3a_3afunko_5',['funko',['../namespaceorg_1_1example_1_1funko2_1_1dto_1_1funko.html',1,'org::example::funko2::dto']]],
+  ['org_3a_3aexample_3a_3afunko2_3a_3aexceptions_3a_3acategoria_6',['categoria',['../namespaceorg_1_1example_1_1funko2_1_1exceptions_1_1categoria.html',1,'org::example::funko2::exceptions']]],
+  ['org_3a_3aexample_3a_3afunko2_3a_3aexceptions_3a_3afunko_7',['funko',['../namespaceorg_1_1example_1_1funko2_1_1exceptions_1_1funko.html',1,'org::example::funko2::exceptions']]],
+  ['org_3a_3aexample_3a_3afunko2_3a_3aexceptions_3a_3astorage_8',['storage',['../namespaceorg_1_1example_1_1funko2_1_1exceptions_1_1storage.html',1,'org::example::funko2::exceptions']]],
+  ['org_3a_3aexample_3a_3afunko2_3a_3ahandler_9',['handler',['../namespaceorg_1_1example_1_1funko2_1_1handler.html',1,'org::example::funko2']]],
+  ['org_3a_3aexample_3a_3afunko2_3a_3amapper_10',['mapper',['../namespaceorg_1_1example_1_1funko2_1_1mapper.html',1,'org::example::funko2']]],
+  ['org_3a_3aexample_3a_3afunko2_3a_3amodel_11',['model',['../namespaceorg_1_1example_1_1funko2_1_1model.html',1,'org::example::funko2']]],
+  ['org_3a_3aexample_3a_3afunko2_3a_3arepository_12',['repository',['../namespaceorg_1_1example_1_1funko2_1_1repository.html',1,'org::example::funko2']]],
+  ['org_3a_3aexample_3a_3afunko2_3a_3aservice_13',['service',['../namespaceorg_1_1example_1_1funko2_1_1service.html',1,'org::example::funko2']]],
+  ['org_3a_3aexample_3a_3afunko2_3a_3aservice_3a_3acategoria_14',['categoria',['../namespaceorg_1_1example_1_1funko2_1_1service_1_1categoria.html',1,'org::example::funko2::service']]],
+  ['org_3a_3aexample_3a_3afunko2_3a_3aservice_3a_3afunko_15',['funko',['../namespaceorg_1_1example_1_1funko2_1_1service_1_1funko.html',1,'org::example::funko2::service']]],
+  ['org_3a_3aexample_3a_3afunko2_3a_3astorage_16',['storage',['../namespaceorg_1_1example_1_1funko2_1_1storage.html',1,'org::example::funko2']]],
+  ['org_3a_3aexample_3a_3afunko2_3a_3awebsocket_3a_3adto_17',['dto',['../namespaceorg_1_1example_1_1funko2_1_1webSocket_1_1dto.html',1,'org::example::funko2::webSocket']]],
+  ['org_3a_3aexample_3a_3afunko2_3a_3awebsocket_3a_3amapper_18',['mapper',['../namespaceorg_1_1example_1_1funko2_1_1webSocket_1_1mapper.html',1,'org::example::funko2::webSocket']]],
+  ['org_3a_3aexample_3a_3afunko2_3a_3awebsocket_3a_3amodel_19',['model',['../namespaceorg_1_1example_1_1funko2_1_1webSocket_1_1model.html',1,'org::example::funko2::webSocket']]]
+];
