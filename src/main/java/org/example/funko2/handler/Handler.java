@@ -15,11 +15,19 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import java.util.HashMap;
 import java.util.Map;
-
+/**
+ * Clase que maneja los errores de la API.
+ * @author Aragorn7372
+ */
 @RestControllerAdvice
 class Handler {
     private final Logger logger = LoggerFactory.getLogger(Handler.class);
 
+    /**
+     * Maneja la excepción de MethodArgumentNotValidException.
+     * @param ex Excepción de MethodArgumentNotValidException.
+     * @return Map con el mensaje de error.
+     */
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public Map<String, String> handleValidationExceptions(
@@ -33,6 +41,11 @@ class Handler {
         });
         return errors;
     }
+    /**
+     * Maneja la excepción de FunkoNotFoundException.
+     * @param ex Excepción de FunkoNotFoundException.
+     * @return Map con el mensaje de error.
+     */
     @ResponseStatus(HttpStatus.NOT_FOUND)
     @ExceptionHandler(FunkoNotFoundException.class)
     public Map<String, String> handleFunkoNotFound(FunkoNotFoundException ex) {
@@ -41,6 +54,11 @@ class Handler {
         error.put("message", ex.getMessage());
         return error;
     }
+    /**
+     * Maneja la excepción de CategoriaNotFoundException.
+     * @param ex Excepción de CategoriaNotFoundException.
+     * @return Map con el mensaje de error.
+     */
     @ResponseStatus(HttpStatus.NOT_FOUND)
     @ExceptionHandler(CategoriaNotFoundException.class)
     public Map<String, String> handleFunkoNotFound(CategoriaNotFoundException ex) {
@@ -49,6 +67,11 @@ class Handler {
         error.put("message", ex.getMessage());
         return error;
     }
+    /**
+     * Maneja la excepción de DataIntegrityViolationException.
+     * @param ex Excepción de DataIntegrityViolationException.
+     * @return Map con el mensaje de error.
+     */
     @ResponseStatus(HttpStatus.CONFLICT)
     @ExceptionHandler(DataIntegrityViolationException.class)
     public Map<String, String> handleDataIntegrityViolationException(DataIntegrityViolationException ex) {

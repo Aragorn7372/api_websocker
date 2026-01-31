@@ -12,6 +12,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
 
+/**
+ * Controlador REST para el servicio de almacenamiento de archivos.
+ * @author Aragorn7372
+ */
 @RestController
 @Slf4j
 @RequestMapping("/storage")
@@ -21,6 +25,13 @@ public class StorageController {
     public StorageController(StorageService storageService) {
         this.storageService = storageService;
     }
+
+    /**
+     * Sirve un archivo almacenado.
+     * @param filename Nombre del archivo.
+     * @param request Petición HTTP para determinar el tipo de contenido.
+     * @return ResponseEntity con el recurso del archivo.
+     */
     @GetMapping(value = "{fulename:.+}")
     @ResponseBody
     public ResponseEntity<Resource> serveFile(@PathVariable String filename, HttpServletRequest request) {

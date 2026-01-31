@@ -33,6 +33,11 @@ import java.util.Optional;
 import java.util.UUID;
 
 
+/**
+ * Implementación del servicio de Funkos.
+ * Maneja la lógica de negocio, caché y notificaciones WebSocket.
+ * @author Aragorn7372
+ */
 @Service
 @CacheConfig(cacheNames = {"FunkoResponses"})
 public class FunkoServiceIMPL implements FunkoService {
@@ -55,12 +60,22 @@ public class FunkoServiceIMPL implements FunkoService {
         webSocketService = webSocketConfig.webSocketFunkosHandler();
     }
 
+    /**
+     * Obtiene todos los Funkos.
+     * @return Lista de FunkoResponseDto.
+     */
     @Override
     public List<FunkoResponseDto> findAll() {
         logger.debug("FunkoServiceIMPL findAll");
         return repository.findAll().stream().map(mapper::funkoToFunkoResponseDto).toList();
     }
 
+    /**
+     * Busca un Funko por su ID.
+     * @param id ID del Funko.
+     * @return FunkoResponseDto encontrado.
+     * @throws FunkoNotFoundException si no existe.
+     */
     @Override
     @Cacheable(key = "#id")
     public FunkoResponseDto findById(Long id) {
@@ -73,6 +88,12 @@ public class FunkoServiceIMPL implements FunkoService {
         );
     }
 
+    /**
+     * Guarda un nuevo Funko.
+     * @param funko DTO con datos del nuevo Funko.
+     * @return FunkoResponseDto creado.
+     * @throws CategoriaNotFoundException si la categoría no existe.
+     */
     @Override
     public FunkoResponseDto save(FunkoRequestDto funko) {
         logger.debug("FunkoServiceIMPL save");
@@ -87,6 +108,14 @@ public class FunkoServiceIMPL implements FunkoService {
         return mapper.funkoToFunkoResponseDto(funkoCreado);
     }
 
+    /**
+     * Actualiza parcialmente un Funko.
+     * @param funko DTO con datos a actualizar.
+     * @param id ID del Funko.
+     * @return FunkoResponseDto actualizado.
+     * @throws FunkoNotFoundException si no existe.
+     * @throws CategoriaNotFoundException si la nueva categoría no existe.
+     */
     @Override
     @CacheEvict(key = "#result.id")
     public FunkoResponseDto patch(FunkoPatchRequestDto funko,Long id) {
@@ -115,6 +144,12 @@ public class FunkoServiceIMPL implements FunkoService {
         }
     }
 
+    /**
+     * Elimina un Funko por su ID.
+     * @param id ID del Funko.
+     * @return FunkoResponseDto eliminado.
+     * @throws FunkoNotFoundException si no existe.
+     */
     @Override
     @CacheEvict(key = "#result.id")
     public FunkoResponseDto delete(Long id) {
@@ -133,6 +168,14 @@ public class FunkoServiceIMPL implements FunkoService {
          return mapper.funkoToFunkoResponseDto(funkoEncontrado.get());
     }
 
+    /**
+     * Actualiza un Funko existente.
+     * @param funko DTO con nuevos datos.
+     * @param id ID del Funko.
+     * @return FunkoResponseDto actualizado.
+     * @throws FunkoNotFoundException si no existe.
+     * @throws CategoriaNotFoundException si la categoría no existe.
+     */
     @Override
     @CacheEvict(key = "#result.id")
     public FunkoResponseDto update(FunkoRequestDto funko, Long id) {
@@ -156,10 +199,21 @@ public class FunkoServiceIMPL implements FunkoService {
             throw  new FunkoNotFoundException(error);
         }
     }
+    /**
+     * Busca Funkos por nombre.
+     * @param name Nombre o parte del nombre.
+     * @return Lista de Funkos coincidentes.
+     */
     public List<FunkoResponseDto> findByName(String name) {
         logger.debug("FunkoServiceIMPL findByName");
         return repository.findFunkoByNameContainingIgnoreCase(name).stream().map(mapper::funkoToFunkoResponseDto).toList();
     }
+    /**
+     * Busca un Funko por UUID.
+     * @param uuid UUID del Funko.
+     * @return FunkoResponseDto encontrado.
+     * @throws FunkoNotFoundException si no existe.
+     */
     public FunkoResponseDto findByUuid(UUID uuid) {
         logger.debug("FunkoServiceIMPL findByUuid");
         return mapper.funkoToFunkoResponseDto(repository.findAllByUuid(uuid).orElseThrow(()->{
@@ -168,6 +222,12 @@ public class FunkoServiceIMPL implements FunkoService {
             })
         );
     }
+    /**
+     * Busca Funkos por categoría.
+     * @param category Nombre de la categoría.
+     * @return Lista de Funkos de la categoría.
+     * @throws CategoriaNotFoundException si la categoría no existe.
+     */
     public List<FunkoResponseDto> findByCategory(String category) {
         logger.debug("FunkoServiceIMPL findByCategory");
         val categoriaFound=categoria.findByNameIgnoreCase(category).orElseThrow(()->{
@@ -176,6 +236,11 @@ public class FunkoServiceIMPL implements FunkoService {
         });
         return repository.findFunkoByCategoria(categoriaFound).stream().map(mapper::funkoToFunkoResponseDto).toList();
     }
+    /**
+     * Busca Funkos con precio menor al indicado.
+     * @param precioMenor Precio máximo.
+     * @return Lista de Funkos cumple la condición.
+     */
     public List<FunkoResponseDto> findByPrecioMenor(Double precioMenor) {
         logger.debug("FunkoServiceIMPL findByPrecioMenor");
         return repository.findFunkoByPriceIsLessThan(precioMenor).stream().map(mapper::funkoToFunkoResponseDto).toList();

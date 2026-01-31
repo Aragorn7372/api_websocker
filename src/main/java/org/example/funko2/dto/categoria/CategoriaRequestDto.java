@@ -8,11 +8,19 @@ import lombok.NoArgsConstructor;
 
 
 
+/**
+ * DTO para la solicitud de creación de una categoría.
+ * @author Aragorn7372
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 public class CategoriaRequestDto {
+    /**
+     * Nombre de la categoría.
+     * No puede estar en blanco.
+     */
     @NotBlank
     private String name;
 }

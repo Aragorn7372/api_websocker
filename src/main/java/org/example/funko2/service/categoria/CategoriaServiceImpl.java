@@ -25,6 +25,10 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
 
+/**
+ * Implementación del servicio de Categorías.
+ * @author Aragorn7372
+ */
 @Service
 public class CategoriaServiceImpl implements CategoriaService {
     private final FunkoRepository funkoRepository;
@@ -45,12 +49,22 @@ public class CategoriaServiceImpl implements CategoriaService {
 
     }
     String error="categoria no encontrada con uuid: ";
+    /**
+     * Obtiene todas las categorías.
+     * @return Lista de CategoriaResponseDto.
+     */
     @Override
     public List<CategoriaResponseDto> findAll() {
         logger.info("Iniciando lista de categorias");
         return repository.findAll().stream().map(mapper::categoriaToResponseDto).toList();
     }
 
+    /**
+     * Busca una categoría por su UUID.
+     * @param uuid UUID de la categoría.
+     * @return CategoriaResponseDto encontrado.
+     * @throws CategoriaNotFoundException si no existe.
+     */
     @Override
     public CategoriaResponseDto findById(UUID uuid) {
         return mapper.categoriaToResponseDto(repository.findById(uuid).orElseThrow(()->{
@@ -60,6 +74,11 @@ public class CategoriaServiceImpl implements CategoriaService {
         );
     }
 
+    /**
+     * Guarda una nueva categoría.
+     * @param categoria DTO con datos de la nueva categoría.
+     * @return CategoriaResponseDto creado.
+     */
     @Override
     public CategoriaResponseDto save(CategoriaRequestDto categoria) {
         val categoriaSave=repository.save(mapper.categoriaRequestDtoToCategoria(categoria));
@@ -67,6 +86,13 @@ public class CategoriaServiceImpl implements CategoriaService {
         return mapper.categoriaToResponseDto(categoriaSave);
     }
 
+    /**
+     * Elimina una categoría por su UUID.
+     * @param uuid UUID de la categoría.
+     * @return CategoriaResponseDto eliminado.
+     * @throws CategoriaNotFoundException si no existe.
+     * @throws DataIntegrityViolationException si hay Funkos asociados.
+     */
     @Override
     public CategoriaResponseDto delete(UUID uuid) {
         val categoria = repository.findById(uuid).orElseThrow(() ->{
@@ -83,6 +109,14 @@ public class CategoriaServiceImpl implements CategoriaService {
         return mapper.categoriaToResponseDto(categoria);
     }
 
+    /**
+     * Actualiza una categoría existente.
+     * @param categoriaRequestDto Nuevos datos de la categoría.
+     * @param uuid UUID de la categoría a actualizar.
+     * @return CategoriaResponseDto actualizado.
+     * @throws CategoriaNotFoundException si no existe.
+     * @throws DataIntegrityViolationException si el nombre ya existe en otra categoría.
+     */
     @Override
     public CategoriaResponseDto update(CategoriaRequestDto categoriaRequestDto, UUID uuid) {
         val categoria= repository.findById(uuid).orElseThrow(()-> {

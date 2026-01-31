@@ -6,9 +6,19 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * Clase de configuración del almacenamiento.
+ * @author Aragorn7372
+ */
 @Configuration
 @Slf4j
 public class StorageConfig {
+    /**
+     * Inicializa el almacenamiento.
+     * @param storageService Servicio de almacenamiento.
+     * @param deleteAll Indica si se deben borrar todos los ficheros.
+     * @return Inicializa el almacenamiento.
+     */
     @Bean
     public CommandLineRunner init(StorageService storageService, @Value("${upload.delete}") String deleteAll) {
         return args -> {

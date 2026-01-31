@@ -2,6 +2,10 @@ package org.example.funko2.exceptions.storage;
 
 import java.io.Serial;
 
+/**
+ * Excepción base para errores en el servicio de almacenamiento.
+ * @author Aragorn7372
+ */
 public abstract class StorageException extends RuntimeException {
     // Por si debemos serializar
     @Serial

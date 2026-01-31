@@ -13,7 +13,10 @@ import java.time.LocalTime;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
-
+/**
+ * Clase que maneja la conexión WebSocket.
+ * @author Aragorn7372
+ */
 @Slf4j
 public class WebSocketHandler extends TextWebSocketHandler implements SubProtocolCapable, WebSocketSender {
     private final String entity; // Entidad que se notifica
